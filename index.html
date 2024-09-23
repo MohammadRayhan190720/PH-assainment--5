@@ -43,7 +43,7 @@
     <nav>
       <div class="navbar bg-base-100">
     <div class="navbar-start">
-    <a class="btn btn-ghost bg-buttonColor text-xl font-medium text-gray-700">Blog</a>
+    <a class="btn btn-ghost bg-buttonColor text-xl font-medium text-gray-700 px-6">Blog</a>
   </div>
   <div class="navbar-center flex justify-center items-center gap-4 text-gray-700">
    <img class="hidden" src="./images/logo.png" alt="">
@@ -70,9 +70,9 @@
 
   </header>
   <main>
-    <!-- flood at noyakhali section start hare -->
-     <div>
-      <div class="hero bg-base-200 min-h-screen rounded-xl">
+    <div>
+       <!-- flood at noyakhali section start hare -->
+      <div class="hero bg-base-200  rounded-xl px-6 py-6 mt-5">
     <div class="hero-content flex-col lg:flex-row border rounded-xl">
     <img
       src="./images/noakhali.png" alt="noyakhali-flood"
@@ -80,10 +80,56 @@
     <div>
       <button class="btn bg-gray-300">
         <img src="./images/coin.png" alt="coin">
-        <span>0</span>
+        <span id="noyakhali-balance">0</span>
         <span>BDT</span>
       </button>
       <h1 class="text-3xl font-semibold mt-3">Donate for Flood at Noakhali, Bangladesh</h1>
+      <p class="py-6">
+        Your support can bring hope to flood-affected families in Noakhali, Bangladesh. Many have lost their homes, belongings, and access to basic necessities. By donating, you can help provide essential relief such as food, clean water, shelter, and medical aid. Every contribution, big or small, makes a significant impact. Stand with us to rebuild lives and restore hope.
+      </p>
+      <input id="noyakhali-donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+
+      <button id="noyakhali-donate-btn" class="btn bg-buttonColor w-full text-xl font-bold mt-4">Donate Now</button>
+    </div>
+    </div>
+     </div>
+     <!-- flood at noyakhali section ends hare -->
+     <!-- flood at feni section start hare -->
+      <div class="hero bg-base-200  rounded-xl px-6 py-6 mt-5">
+    <div class="hero-content flex-col lg:flex-row border rounded-xl">
+    <img
+      src="./images/feni.png" alt="noyakhali-flood"
+      class="max-w-sm lg:max-w-4xl rounded-lg shadow-2xl" />
+    <div>
+      <button class="btn bg-gray-300">
+        <img src="./images/coin.png" alt="coin">
+        <span id="feni-balance">0</span>
+        <span>BDT</span>
+      </button>
+      <h1 class="text-3xl font-semibold mt-3">Donate for Flood Relief in Feni,Bangladesh</h1>
+      <p class="py-6">
+        Your support can bring hope to flood-affected families in Noakhali, Bangladesh. Many have lost their homes, belongings, and access to basic necessities. By donating, you can help provide essential relief such as food, clean water, shelter, and medical aid. Every contribution, big or small, makes a significant impact. Stand with us to rebuild lives and restore hope.
+      </p>
+      <input id="feni-donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+
+      <button id="feni-donate-btn" class="btn bg-buttonColor w-full text-xl font-bold mt-4">Donate Now</button>
+    </div>
+    </div>
+     </div>
+     <!-- flood at noyakhali section ends hare -->
+      <!--  Quota Movement section start hare -->
+      <div class="hero bg-base-200  rounded-xl px-6 py-6 mt-5">
+    <div class="hero-content flex-col lg:flex-row border rounded-xl">
+    <img
+      src="./images/quota-protest.png" alt="noyakhali-flood"
+      class="max-w-sm lg:max-w-4xl rounded-lg shadow-2xl" />
+    <div>
+      <button class="btn bg-gray-300">
+        <img src="./images/coin.png" alt="coin">
+        <span>0</span>
+        <span>BDT</span>
+      </button>
+      <h1 class="text-3xl font-semibold mt-3">Aid for Injured in the Quota Movement</h1>
       <p class="py-6">
         Your support can bring hope to flood-affected families in Noakhali, Bangladesh. Many have lost their homes, belongings, and access to basic necessities. By donating, you can help provide essential relief such as food, clean water, shelter, and medical aid. Every contribution, big or small, makes a significant impact. Stand with us to rebuild lives and restore hope.
       </p>
@@ -91,10 +137,11 @@
 
       <button class="btn bg-buttonColor w-full text-xl font-bold mt-4">Donate Now</button>
     </div>
-  </div>
-</div>
+    </div>
      </div>
-    <!-- flood at noyakhali section start hare -->
+     <!--  Quota Movement section start hare -->
+     </div>
+    
 
   </main>
   <footer>
@@ -103,7 +150,7 @@
 
 
   
-
+  <script src="./js/function.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>
