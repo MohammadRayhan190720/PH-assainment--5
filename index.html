@@ -51,7 +51,7 @@
   </div>
   <div class="navbar-end lg:space-x-3">
     <img src="./images/coin.png" alt="">
-    <p id="account-blance" class=" font-bold text-gray-700 flex gap-1"> 5500 <span>BDT</span></p>
+    <p id="account-balance" class=" font-bold text-gray-700 flex gap-1"> 5500 <span>BDT</span></p>
   </div>
 </div>
 
@@ -63,14 +63,14 @@
     <!-- button -->
      <div class="text-center">
       <button class="btn text-xl px-6 ">Donation</button>
-      <button class="btn text-xl px-6">History</button>
+      <button id="history-button" class="btn text-xl px-6">History</button>
      </div>
      <!-- deveiver -->
     <div class="divider"></div>
 
   </header>
   <main>
-    <div>
+    <div id="main-container">
        <!-- flood at noyakhali section start hare -->
       <div class="hero bg-base-200  rounded-xl px-6 py-6 mt-5">
     <div class="hero-content flex-col lg:flex-row border rounded-xl">
@@ -139,8 +139,14 @@
     </div>
     </div>
      </div>
-     <!--  Quota Movement section start hare -->
+     <!--  Quota Movement section ends hare -->
      </div>
+
+     <!-- history section -->
+      <div id="history-container">
+
+
+      </div>
     
 
   </main>
@@ -151,6 +157,7 @@
 
   
   <script src="./js/function.js"></script>
+  <script src="./js/history.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>
