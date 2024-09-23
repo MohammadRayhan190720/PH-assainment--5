@@ -26,14 +26,14 @@ document.getElementById("feni-donate-btn")
 
   // donate btn for quote movement
 
-document.getElementById("feni-donate-btn")
+document.getElementById("movement-donate-btn")
   .addEventListener("click", function () {
-    const donateAmountFeni = inputValueById("feni-donate-amount");
+    const donateAmountForMovement = inputValueById("movement-donate-amount");
 
-    const feniBalance = inputTextById("feni-balance");
+    const movementBalance = inputTextById("movement-balance");
 
-    const updateBalanceFeni = feniBalance + donateAmountFeni;
+    const updateBalanceForMovement = movementBalance + donateAmountForMovement;
 
-    document.getElementById("feni-balance").innerText =
-      updateBalanceFeni;
+    document.getElementById("movement-balance").innerText =
+      updateBalanceForMovement;
   });
