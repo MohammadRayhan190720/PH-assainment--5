@@ -7,45 +7,43 @@ const historyButton = document.getElementById("history-button");
 
 
 // donate btn for noyakhali
-document.getElementById("noyakhali-donate-btn").addEventListener("click", function(){
-  
-  const donateAmountNoyakhali = inputValueById("noyakhali-donate-amount");
-  
-  const noyakhaliBalance = inputTextById("noyakhali-balance");
-  
-  const updateBalanceNoyakhali = noyakhaliBalance + donateAmountNoyakhali ;
+document.getElementById("noakhali-donate-btn")
+  .addEventListener("click", function () {
+    const donateAmountNoakhali = inputValueById("donate-amount-noakhali");
 
-  
-  document.getElementById("noyakhali-balance").innerText = updateBalanceNoyakhali;
+    const balanceNoakhali = inputTextById("balance-noakhali");
 
-  // deducted from the total account balance
-  const accountBalance = inputTextById("account-balance");
-  const updateAccountBalance = accountBalance - donateAmountNoyakhali;
-  document.getElementById("account-balance").innerText = updateAccountBalance;
+    const updateBalanceNoakhali = balanceNoakhali + donateAmountNoakhali;
 
-  // show in history
-  const historyContainer = document.getElementById("history-container");
-  const div = document.createElement("div");
-  div.classList.add("border-2", "p-10");
-  div.innerHTML = `
-     <P class="text-xl font-bold">${donateAmountNoyakhali}  Taka is Donate for Flood at Noakhali, Bangladesh</P>
+    document.getElementById("balance-noakhali").innerText = updateBalanceNoakhali;
+
+    // deducted from the total account balance
+    const accountBalance = inputTextById("account-balance");
+    const updateAccountBalance = accountBalance - donateAmountNoakhali;
+    document.getElementById("account-balance").innerText = updateAccountBalance;
+
+    // show in history
+    const historyContainer = document.getElementById("history-container");
+    const div = document.createElement("div");
+    div.classList.add("border-2", "p-10");
+    div.innerHTML = `
+     <P class="text-xl font-bold">${donateAmountNoakhali}  Taka is Donate for Flood at Noakhali, Bangladesh</P>
      <P class="mt-3">${new Date().toISOString()}</P>
     `;
 
-  historyContainer.appendChild(div);
-
-});
+    historyContainer.appendChild(div);
+  });
 
 // donate btn for feni
 document.getElementById("feni-donate-btn")
   .addEventListener("click", function () {
-    const donateAmountFeni = inputValueById("feni-donate-amount");
+    const donateAmountFeni = inputValueById("donate-amount-feni");
 
-    const feniBalance = inputTextById("feni-balance");
+    const balanceFeni = inputTextById("balance-feni");
 
-    const updateBalanceFeni = feniBalance + donateAmountFeni;
+    const updateBalanceFeni = balanceFeni + donateAmountFeni;
 
-    document.getElementById("feni-balance").innerText = updateBalanceFeni;
+    document.getElementById("balance-feni").innerText = updateBalanceFeni;
 
     // deducted from the total account balance
     const accountBalance = inputTextById("account-balance");
@@ -53,11 +51,6 @@ document.getElementById("feni-donate-btn")
     document.getElementById("account-balance").innerText = updateAccountBalance;
 
     // show in history
-    document
-      .getElementById("history-button")
-      .addEventListener("click", function () {
-        const mainContainer = document.getElementById("main-container");
-        mainContainer.classList.add("hidden");
 
         const historyContainer = document.getElementById("history-container");
         const div = document.createElement("div");
@@ -68,42 +61,34 @@ document.getElementById("feni-donate-btn")
       `;
 
         historyContainer.appendChild(div);
-      });
   });
 
   // donate btn for quote movement
 
 document.getElementById("movement-donate-btn")
   .addEventListener("click", function () {
-    const donateAmountForMovement = inputValueById("movement-donate-amount");
+    const donateAmountMovement = inputValueById("donate-amount-movement");
 
-    const movementBalance = inputTextById("movement-balance");
+    const balanceMovement = inputTextById("balance-movement");
 
-    const updateBalanceForMovement = movementBalance + donateAmountForMovement;
+    const updateBalanceMovement = balanceMovement + donateAmountMovement;
 
-    document.getElementById("movement-balance").innerText =
-      updateBalanceForMovement;
+    document.getElementById("balance-movement").innerText = updateBalanceMovement;
 
     // deducted from the total account balance
     const accountBalance = inputTextById("account-balance");
-    const updateAccountBalance = accountBalance - donateAmountForMovement;
+    const updateAccountBalance = accountBalance - donateAmountMovement;
     document.getElementById("account-balance").innerText = updateAccountBalance;
 
     // show in history
-    document
-      .getElementById("history-button")
-      .addEventListener("click", function () {
-        const mainContainer = document.getElementById("main-container");
-        mainContainer.classList.add("hidden");
 
         const historyContainer = document.getElementById("history-container");
         const div = document.createElement("div");
         div.classList.add("border-2", "p-10");
         div.innerHTML = `
-     <P class="text-xl font-bold">${donateAmountForMovement}  Taka is Donate for Injured in the Quota Movement</P>
-     <P class="mt-3">${new Date().toISOString()}</P>
+       <P class="text-xl font-bold">${donateAmountMovement}  Taka is Donate for Injured in the Quota Movement</P>
+      <P class="mt-3">${new Date().toISOString()}</P>
     `;
 
         historyContainer.appendChild(div);
-      });
   });

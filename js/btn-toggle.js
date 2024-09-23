@@ -14,6 +14,7 @@ donateButton.addEventListener("click", function(){
 historyButton.addEventListener("click", function () {
   historyButton.classList.add("bg-buttonColor");
   donateButton.classList.remove("bg-buttonColor");
+  document.getElementById("history-container").classList.remove("hidden");
 
   mainContainer.classList.add("hidden");
 });
