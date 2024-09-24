@@ -2,6 +2,7 @@
 const donateButton = document.getElementById("donation-button");
 const historyButton = document.getElementById("history-button");
  const mainContainer = document.getElementById("main-container");
+ const historyContainer = document.getElementById("history-container");
 
 
 
