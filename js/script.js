@@ -17,12 +17,16 @@ document.getElementById("noakhali-donate-btn")
 
     // validation
     if (donateAmountNoakhali <= 0 || isNaN(donateAmountNoakhali)) {
-      return alert("invalid data found");
+       alert("invalid data found");
+       document.getElementById("my_modal_1").close();
+       return ;
     }
     
 
     if (accountBalance < donateAmountNoakhali) {
-      return alert("insufficient balance");
+       alert("insufficient balance");
+       document.getElementById("my_modal_1").close();
+       return;
     }
 
     const updateBalanceNoakhali = balanceNoakhali + donateAmountNoakhali;
@@ -58,11 +62,15 @@ document.getElementById("noakhali-donate-btn")
 
     // validation
     if (donateAmountFeni <= 0 || isNaN(donateAmountFeni)) {
-      return alert("invalid data found");
+        alert("invalid data found");
+        document.getElementById("my_modal_1").close();
+        return;
     }
     // validation
     if (accountBalance < donateAmountFeni) {
-      return alert("Insufficient balance");
+       alert("Insufficient balance");
+        document.getElementById("my_modal_1").close();
+        return;
     }
 
     const updateBalanceFeni = balanceFeni + donateAmountFeni;
@@ -100,12 +108,16 @@ document.getElementById("movement-donate-btn")
 
     // validation
     if (donateAmountMovement <= 0 || isNaN(donateAmountMovement)) {
-      return alert("invalid data found");
+       alert("invalid data found");
+        document.getElementById("my_modal_1").close();
+        return;
     }
 
     // validation
     if (accountBalance < donateAmountMovement) {
-      return alert("Insufficient balance");
+      alert("Insufficient balance");
+      document.getElementById("my_modal_1").close();
+      return;
     }
 
     const updateBalanceMovement = balanceMovement + donateAmountMovement;

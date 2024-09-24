@@ -107,7 +107,7 @@
      
         <!-- if there is a button in form, it will close the modal -->
         <div class="flex  justify-center border mt-4">
-          <button onclick = "my_modal_1.close()" class="btn bg-buttonColor rounded-xl px-8 py-3">Continiue</button>
+          <button onclick = "modalClose()" class="btn bg-buttonColor rounded-xl px-8 py-3">Continiue</button>
         </div>
     </div>
      </dialog>
@@ -133,7 +133,22 @@
       </p>
       <input id="donate-amount-feni" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
 
-      <button id="feni-donate-btn" class="btn bg-buttonColor w-full text-xl font-bold mt-4">Donate Now</button>
+      <button onclick="donationHandler()" id="feni-donate-btn" class="btn bg-buttonColor w-full text-xl font-bold mt-4">Donate Now</button>
+      <!-- modal -->
+       <dialog  id="my_modal_1" class="modal "> 
+    <div class="modal-box">
+     <h3 class="font-extrabold text-red-500  text-3xl flex justify-center items-center">
+      <i class="fa-solid fa-medal"></i>
+     </h3>
+     <p class="py-4 text-center font-extrabold text-3xl text-red-500 ">Congraculation</p>
+     <p class="font-Inter text-lg font-semibold text-center">Thank you for your generous donation! Your kindness makes a real difference. Wishing you happiness, health, and endless blessings!</p>
+     
+        <!-- if there is a button in form, it will close the modal -->
+        <div class="flex  justify-center border mt-4">
+          <button onclick = "modalClose()" class="btn bg-buttonColor rounded-xl px-8 py-3">Continiue</button>
+        </div>
+    </div>
+      </dialog>
     </div>
     </div>
      </div>
@@ -156,7 +171,22 @@
       </p>
       <input id="donate-amount-movement" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
 
-      <button id="movement-donate-btn" class="btn bg-buttonColor w-full text-xl font-bold mt-4">Donate Now</button>
+      <button onclick="donationHandler()" id="movement-donate-btn" class="btn bg-buttonColor w-full text-xl font-bold mt-4">Donate Now</button>
+      <!-- modal -->
+       <dialog  id="my_modal_1" class="modal "> 
+    <div class="modal-box">
+     <h3 class="font-extrabold text-red-500  text-3xl flex justify-center items-center">
+      <i class="fa-solid fa-medal"></i>
+     </h3>
+     <p class="py-4 text-center font-extrabold text-3xl text-red-500 ">Congraculation</p>
+     <p class="font-Inter text-lg font-semibold text-center">Thank you for your generous donation! Your kindness makes a real difference. Wishing you happiness, health, and endless blessings!</p>
+     
+        <!-- if there is a button in form, it will close the modal -->
+        <div class="flex  justify-center border mt-4">
+          <button onclick = "modalclose()" class="btn bg-buttonColor rounded-xl px-8 py-3">Continiue</button>
+        </div>
+    </div>
+     </dialog>
     </div>
     </div>
      </div>
