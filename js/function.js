@@ -9,3 +9,14 @@ function inputTextById(id){
   const inputTextNumber = parseFloat(inputText);
   return inputTextNumber;
 }
+
+// forModalShowWhenDonation is Successfull
+function donationHandler(){
+  const isDonationSuccessfull = true;
+
+  if(isDonationSuccessfull){
+     document.getElementById("my_modal_1").showModal();
+  }else{
+    alert("Unsuccessful donation")
+  }
+}
