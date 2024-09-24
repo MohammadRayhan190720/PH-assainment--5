@@ -26,6 +26,7 @@
         extend: {
           colors: {
             buttonColor : "#B4F461",
+            navBg : "#F9F7F3"
             
 
           },
@@ -37,34 +38,37 @@
     }
   </script>
 </head>
-<body class="w-11/12 mx-auto font-Inter mt-10">
+<body class="w-11/12 mx-auto font-Inter">
   <header>
     <!-- nav section start hare -->
-    <nav class="">
-      <div class="navbar bg-base-100 ">
+   
+    <nav class="relative h-40">
+   <!-- Navbar -->
+   <div class="navbar fixed top-0 left-0 z-10 w-full  flex items-center justify-between px-12 backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200">
     <div class="navbar-start">
-    <a class="btn btn-ghost bg-buttonColor text-xl font-medium text-gray-700 px-6">Blog</a>
+      <a class="btn btn-ghost bg-buttonColor text-xl font-medium text-gray-700 px-6">Blog</a>
+    </div>
+    <div class="navbar-center flex justify-center items-center gap-4 text-gray-700">
+      <img class="invisible md:visible" src="./images/logo.png" alt="Logo">
+      <h3 class="text-2xl lg:text-3xl font-bold mr-10 md:mr-0">Donate Bangladesh</h3>
+    </div>
+    <div class="navbar-end lg:space-x-3 mr-24 flex items-center">
+      <img class="invisible md:visible" src="./images/coin.png" alt="Coin">
+      <p id="account-balance" class="font-bold text-gray-700 flex gap-1 mr-5 md:mr-0">5500 <span>BDT</span></p>
+    </div>
   </div>
-  <div class="navbar-center flex justify-center items-center gap-4 text-gray-700">
-   <img class="invisible  md:visible" src="./images/logo.png" alt="">
-   <h3 class="text-2xl lg:text-3xl font-bold mr-10 md:mr-0">Donate Bangladesh</h3>
+ 
+  
+  <!-- Button Section-->
+  <div class=" w-full fixed top-16 left-0 z-10 flex justify-center items-center gap-4 py-4 backdrop-filter backdrop-blur-sm bg-opacity-30 border-b border-gray-200">
+    <button id="donation-button" class="btn text-xl px-6 ">Donation</button>
+    <button id="history-button" class="btn text-xl px-6 ">History</button>
   </div>
-  <div class="navbar-end  lg:space-x-3">
-    <img class="invisible md:visible" src="./images/coin.png" alt="">
-    <p id="account-balance" class=" font-bold text-gray-700 flex gap-1 mr-5 md:mr-0"> 5500 <span>BDT</span></p>
-  </div>
-     </div>
+</nav>
 
-    </nav>
+
     <!-- nav section ends hare -->
-    <!-- deveiver -->
-    <div class="divider"></div>
-
-    <!-- button -->
-     <div class="text-center">
-      <button id="donation-button" class="btn text-xl px-6 ">Donation</button>
-      <button id="history-button" class="btn text-xl px-6">History</button>
-     </div>
+   
      <!-- deveiver -->
     <div class="divider"></div>
 
