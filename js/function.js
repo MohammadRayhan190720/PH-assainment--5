@@ -11,12 +11,13 @@ function inputTextById(id){
 }
 
 // forModalShowWhenDonation is Successfull
-function donationHandler(){
-  const isDonationSuccessfull = true;
-
-  if(isDonationSuccessfull){
-     document.getElementById("my_modal_1").showModal();
-  }else{
-    alert("Unsuccessful donation")
-  }
-}
+// function donationHandler(){
+//   const isDonationSuccessfull = true;
+  
+//   if(isDonationSuccessfull){
+//     document.getElementById("my_modal_1").showModal();
+//     // document.getElementById("my_modal_1").open = false;
+//   }else{
+//     alert("Unsuccessful donation")
+//   }
+// }

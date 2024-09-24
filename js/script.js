@@ -19,20 +19,18 @@ document.getElementById("noakhali-donate-btn")
     if (donateAmountNoakhali <= 0 || isNaN(donateAmountNoakhali)) {
       return alert("invalid data found");
     }
+    
 
-     if (accountBalance < donateAmountNoakhali) {
-       return alert("insufficient balance");
-     }
-   
+    if (accountBalance < donateAmountNoakhali) {
+      return alert("insufficient balance");
+    }
 
     const updateBalanceNoakhali = balanceNoakhali + donateAmountNoakhali;
-    
+
     document.getElementById("balance-noakhali").innerText =
       updateBalanceNoakhali;
 
     // deducted from the total account balance
-    
-    
 
     const updateAccountBalance = accountBalance - donateAmountNoakhali;
     document.getElementById("account-balance").innerText = updateAccountBalance;
