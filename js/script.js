@@ -31,13 +31,15 @@ document.getElementById("noakhali-donate-btn")
 
     const updateBalanceNoakhali = balanceNoakhali + donateAmountNoakhali;
 
-    document.getElementById("balance-noakhali").innerText =
-      updateBalanceNoakhali;
+    document.getElementById("balance-noakhali").innerText = updateBalanceNoakhali;
 
     // deducted from the total account balance
 
     const updateAccountBalance = accountBalance - donateAmountNoakhali;
     document.getElementById("account-balance").innerText = updateAccountBalance;
+    
+    //clear the value 
+    document.getElementById("donate-amount-noakhali").value = '';
 
     // show in history
     const historyContainer = document.getElementById("history-container");
@@ -82,6 +84,9 @@ document.getElementById("noakhali-donate-btn")
 
     const updateAccountBalance = accountBalance - donateAmountFeni;
     document.getElementById("account-balance").innerText = updateAccountBalance;
+    
+    // clear the value
+    document.getElementById("donate-amount-feni").value = "";
 
     // show in history
 
@@ -130,6 +135,9 @@ document.getElementById("movement-donate-btn")
 
     const updateAccountBalance = accountBalance - donateAmountMovement;
     document.getElementById("account-balance").innerText = updateAccountBalance;
+
+    //clear the value
+    document.getElementById("donate-amount-movement").value = "";
 
     // show in history
 
