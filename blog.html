@@ -72,31 +72,57 @@
 
   <main>
     <div>
-      <div class="hero bg-base-200 mt-10">
+      <div class="hero  bg-base-200 mt-10">
     <div class="hero-content flex-col lg:flex-row-reverse gap-10">
     <img
       src="./images/web.jpg" alt="web"
-      class="max-w-sm lg:max-w-xl rounded-lg shadow-2xl" />
-      <div>
+      class="w-full lg:w-1/2 rounded-lg shadow-2xl" />
+      <div class="w-full lg:w-1/2">
         <div class="collapse collapse-arrow bg-base-200">
     <input type="radio" name="my-accordion-2" checked="checked" />
-   <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+   <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
   <div class="collapse-content">
-    <p>hello</p>
+    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a web page as a tree of objects, where each element,  and piece of text is a node in this tree. The DOM allows  to access, manipulate, and update the content,  and style of a web page using JavaScript.Mainly DOM creat a Relation Between HTML and Javascript.</p>
   </div>
     </div>
     <div class="collapse collapse-arrow bg-base-200">
   <input type="radio" name="my-accordion-2" />
-  <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
   <div class="collapse-content">
-    <p>hello</p>
+    <ul>
+
+    <li> By ID: getElementById - Selects a single element with a specific id.</li>
+    <br>
+    <li> By Class Name: getElementsByClassName - Selects all elements with a specific class.</li>
+    <br>
+     <li>By Tag Name: getElementsByTagName - Selects all elements with a specific tag name</li>
+     <br>
+     <li>By CSS Selector (Single Element): querySelector - Selects the first element that matches a CSS selector by id/class/tagName.</li>
+     <br>
+    <li>By CSS Selector (Multiple Elements): querySelectorAll - Selects all elements that match a CSS selector and returns a static NodeList.</li>
+    </ul>
   </div>
    </div>
     <div class="collapse collapse-arrow bg-base-200">
   <input type="radio" name="my-accordion-2" />
-  <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
   <div class="collapse-content">
-    <p>hello</p>
+    <ul>
+      <li>Accessing Elements by getElementById,getElementByTagName,getElementsByClassName</li>
+      <li>Changeing Text useing innerText,innerHTML,innerContent</li>
+      <li>To change an element's attributes,  use the setAttribute, getAttribute, or direct property access.</li>
+      <li>Use the style property to manipulate CSS styles.And add class Useing classList</li>
+    </ul>
+  </div>
+   </div>
+    <div class="collapse collapse-arrow bg-base-200">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+  <div class="collapse-content">
+    <p>Event delegation: add event listeners to each individual child element Instead of  you attach a single event listener to a parent element. This parentElement listener can then handle events triggered by its child elements. </p>
+    <P>why it is useful : when add event listener each childNode  its occour different issue.
+      solveing this issue we add eventlistener parentNode.its helps us code perfermence inprovement.it also help us dynamic element handleing.If we add element dynamically and add eventlistener to parentNode its easy to append.
+    </P>
   </div>
    </div>
       </div>
